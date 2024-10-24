@@ -32,7 +32,7 @@ agriculture_data <- read_xls("data-raw/FAOSTAT_data_en_9-6-2024.xls") %>%
   select("Year", "Value")
 
 analysis_data <- merge(bird_data, agriculture_data, by = "Year", all = TRUE) %>%
-  rename("Bird Population" = "population",
+  rename("Bird_Population" = "population",
          "Production" = "Value")
 
 usethis::use_data(analysis_data, overwrite = TRUE)
