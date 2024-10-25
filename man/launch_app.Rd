@@ -7,5 +7,5 @@
 launch_app()
 }
 \description{
-Launch Shiny app
+Launch Shiny app to show plot comparison for grassland bird population and production rate of livestock and crops in North America.
 }
