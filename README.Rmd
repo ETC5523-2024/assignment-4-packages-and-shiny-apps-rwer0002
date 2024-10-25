@@ -1,0 +1,50 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# grasslandbirds
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of grasslandbirds is to provide an analysis and a comparison of the
+population of grassland birds in North America, with the production rate of various
+livestock and crops. The population data is based on various grassland bird species that
+were recorded within the Project Feederwatch survey (2000 - 2024). The production rate,
+is taken from the Food and Agriculture Organisation of the United Nations (FAO), the 
+data shows the amount of livestock and crops that were produced (in tonnes) in North America. 
+
+## Installation
+
+You can install the development version of grasslandbirds from [GitHub](https://github.com/) with:
+
+``` r
+remotes::install_github("ETC5523-2024/assignment-4-packages-and-shiny-apps-rwer0002")
+```
+
+## Example
+
+This is a basic example which shows you how to plot the grassland bird population:
+
+```{r example}
+library(grasslandbirds)
+library(tidyverse)
+
+analysis_data %>%
+  ggplot(aes(x = Year, y = population)) +
+  geom_line()
+```
+
+Moreover, an interactive online app for this data can be deployed by using the
+**launch_app** function, within the package. 

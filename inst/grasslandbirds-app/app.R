@@ -48,7 +48,7 @@ server <- function(input, output) {
 
       analysis_data%>%
         filter(Year %in% input$YearSelect) %>%
-        ggplot(aes(x = Year, y = Bird_Population)) +
+        ggplot(aes(x = Year, y = population))+
         geom_line(linewidth = 0.5) +
         labs(title = "Bird Population")
 
@@ -59,7 +59,7 @@ server <- function(input, output) {
 
       analysis_data%>%
         filter(Year %in% input$YearSelect) %>%
-        ggplot(aes(x = Year, y = Production)) +
+        ggplot(aes(x = Year, y = Value)) +
         geom_line(linewidth = 0.5) +
         labs(title = "Production of Livestock and Crops")
 
