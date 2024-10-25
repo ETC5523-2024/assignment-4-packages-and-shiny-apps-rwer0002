@@ -48,3 +48,6 @@ analysis_data %>%
 
 Moreover, an interactive online app for this data can be deployed by using the
 **launch_app** function, within the package. 
+
+Link to package website:
+https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-rwer0002/index.html
