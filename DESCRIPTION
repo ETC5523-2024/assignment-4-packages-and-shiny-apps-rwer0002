@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Rachitha", "Werake", , "rwer0002@student.monash.edu", role = c("aut", "cre"))
 Description: A package to compare the grassland bird population with the production rate of livestock and crop in North America. By utilising the launch_app function within the package, a web app will be deployed, allowing the user to visually analyse the trend for both the grassland bird population and the production rate of various livestock and crops in North Ameirca. 
-License: `use_mit_license()`
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
